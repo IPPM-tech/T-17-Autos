@@ -1,2 +1,235 @@
-<!doctype html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Contact | T-17 Autos</title><link rel="stylesheet" href="css/styles.css"><script defer src="js/script.js"></script></head><body><header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">T</span><span>T-17 <b>Autos</b></span></a><nav><a href="index.html">Home</a><a href="services.html">Services</a><a class="active" href="contact.html">Contact</a></nav><a class="button button-small" href="contact.html">Book a visit</a></header><main><section class="page-hero"><p class="eyebrow">Start a conversation</p><h1>Let’s find your<br><em>perfect match.</em></h1><p class="lead">Have a question, a vehicle in mind or need a service appointment? Send us a message.</p></section><section class="contact-layout"><div class="contact-details"><p class="eyebrow">Visit or call</p><h2>We’d love to<br><em>hear from you.</em></h2><p>Our team is ready to help you make your next move with confidence.</p><div class="detail"><b>Phone</b><a href="tel:+0000000000">+00 000 000 0000</a></div><div class="detail"><b>Email</b><a href="mailto:hello@t17autos.com">hello@t17autos.com</a></div><div class="detail"><b>Hours</b><span>Mon – Sat · 08:00 – 17:00</span></div></div><form id="contact-form"><label for="name">Your name</label><input id="name" name="name" required placeholder="Jane Doe"><label for="email">Email address</label><input id="email" name="email" type="email" required placeholder="you@example.com"><label for="interest">I’m interested in</label><select id="interest" name="interest"><option>Buying a vehicle</option><option>Servicing my vehicle</option><option>Vehicle sourcing</option><option>Something else</option></select><label for="message">Message</label><textarea id="message" name="message" rows="5" required placeholder="How can we help?"></textarea><button class="button" type="submit">Send enquiry →</button><p class="form-message" aria-live="polite"></p></form></section></main><footer><a class="brand" href="index.html"><span class="brand-mark">T</span><span>T-17 <b>Autos</b></span></a><p>© 2026 T-17 Autos. Built for the road ahead.</p><div><a href="index.html">Home</a><a href="services.html">Services</a></div></footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact T-17 Autos - Get in touch for inquiries and bookings.">
+  <title>Contact Us | T-17 Autos</title>
+  <link rel="icon" type="image/png" href="images/logo/t17-logo.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .form-section {
+      padding: 3rem 0;
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      color: var(--primary-color);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 0.75rem;
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-color);
+      color: var(--text-light);
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: var(--accent-color);
+      box-shadow: 0 0 0 3px rgba(0, 46, 126, 0.1);
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      background: linear-gradient(135deg, var(--accent-color), var(--danger-color));
+      color: var(--primary-color);
+      border: none;
+      padding: 1rem;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(0, 46, 126, 0.3);
+    }
+
+    .contact-info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .contact-info-card {
+      background: linear-gradient(135deg, rgba(0, 46, 126, 0.1), rgba(211, 47, 47, 0.05));
+      border: 1px solid var(--border-color);
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .contact-info-card h3 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .contact-info-card p {
+      color: var(--text-light);
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-info-card a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo-section">
+        <img src="images/logo/t17-logo.png" alt="T-17 Autos Logo" class="brand-logo">
+        <h1 class="brand-name">T-17 Autos</h1>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html#showroom" class="nav-link">Showroom</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <button class="cta-button" onclick="document.location.href='contact.html#inquiry';">Book Inquiry</button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2 class="hero-title">Get in Touch</h2>
+        <p class="hero-subtitle">We're here to help with your automotive needs</p>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="form-section">
+      <div class="section-container">
+        <h2 class="section-title">Send us an Inquiry</h2>
+        <p class="section-subtitle">Fill out the form below and we'll respond promptly</p>
+        
+        <div class="form-container">
+          <form id="inquiry-form">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="form-group">
+              <label for="inquiry-type">Inquiry Type *</label>
+              <select id="inquiry-type" name="inquiry-type" required>
+                <option value="">-- Select an option --</option>
+                <option value="vehicle-inquiry">Vehicle Inquiry</option>
+                <option value="service-booking">Service Booking</option>
+                <option value="general">General Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Inquiry</button>
+          </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info-grid">
+          <div class="contact-info-card">
+            <h3>📞 Phone</h3>
+            <p>Contact Details Coming Soon</p>
+            <small>To be confirmed by T-17 Autos</small>
+          </div>
+          <div class="contact-info-card">
+            <h3>📧 Email</h3>
+            <p>Contact Details Coming Soon</p>
+            <small>To be confirmed by T-17 Autos</small>
+          </div>
+          <div class="contact-info-card">
+            <h3>📍 Address</h3>
+            <p>Contact Details Coming Soon</p>
+            <small>To be confirmed by T-17 Autos</small>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="t17-info">
+          <h3>T-17 Autos</h3>
+          <p>© 2026 T-17 Autos. Your trusted automotive partner.</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Showroom</a>
+          <a href="services.html">Services</a>
+        </div>
+      </div>
+      <div class="footer-webmaster">
+        <div class="webmaster-logo">
+          <img src="images/logo/ippm-crest.png" alt="IPPM Logo" class="ippm-logo">
+        </div>
+        <div class="webmaster-text">
+          <small>Webmaster: Institute of Public Peace and Management (IPPM)</small>
+          <small><strong>Tech Unit</strong> | <a href="https://ippm.org.ng" target="_blank">ippm.org.ng</a></small>
+          <small>📞 +234 705 252 6342</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple form handling
+    document.getElementById('inquiry-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your inquiry! We will get back to you soon.');
+      this.reset();
+    });
+  </script>
+  <script src="js/script.js"></script>
+</body>
+</html>

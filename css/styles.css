@@ -1,1 +1,450 @@
-:root{--ink:#101116;--muted:#72747c;--blue:#2d5cff;--red:#ff4d42;--cream:#f5f4f0;--white:#fff}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif}a{text-decoration:none;color:inherit}.site-header{height:82px;display:flex;align-items:center;justify-content:space-between;padding:0 6vw;background:var(--cream)}.brand{display:flex;gap:10px;align-items:center;font-weight:700;letter-spacing:-.04em;font-size:20px}.brand b{color:var(--blue)}.brand-mark{display:grid;place-items:center;background:var(--ink);color:#fff;width:31px;height:31px;border-radius:50%;font-style:italic}nav{display:flex;gap:32px;color:var(--muted);font-size:14px}nav a:hover,nav .active{color:var(--ink)}nav .active{font-weight:bold;border-bottom:2px solid var(--red);padding-bottom:7px}.button{display:inline-block;background:var(--blue);color:#fff;border:0;padding:16px 23px;font-weight:bold;font-size:13px;cursor:pointer;transition:.2s}.button:hover{background:var(--ink);transform:translateY(-2px)}.button-small{padding:12px 16px}.hero{min-height:590px;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:60px 9vw;background:var(--cream);overflow:hidden}.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:11px;color:var(--red);font-weight:bold;margin:0 0 22px}.hero h1,.page-hero h1{font-size:clamp(48px,7vw,92px);line-height:.92;letter-spacing:-.07em;margin:0 0 28px}.hero h1 em,.page-hero h1 em,h2 em{color:var(--blue);font-style:normal}.lead{font-size:18px;line-height:1.6;color:var(--muted);max-width:450px}.hero-actions{display:flex;gap:28px;align-items:center;margin-top:34px}.text-link{font-size:13px;font-weight:bold}.text-link span{color:var(--red);font-size:20px;margin-left:8px}.hero-visual{height:420px;position:relative;background:var(--blue);border-radius:50% 0 50% 50%;transform:rotate(-7deg);margin-left:40px}.car{position:absolute;left:14%;right:8%;top:45%;height:100px;background:var(--ink);border-radius:70% 20% 20% 20%;transform:skew(-12deg)}.car:before{content:'';position:absolute;top:-48px;left:27%;width:43%;height:70px;background:var(--ink);border-radius:80% 20% 0 0}.window{position:absolute;top:-32px;left:34%;width:27%;height:35px;border:2px solid var(--blue);border-radius:60% 10% 0 0}.wheel{position:absolute;bottom:-25px;width:50px;height:50px;border-radius:50%;background:var(--cream);border:13px solid var(--ink)}.left{left:17%}.right{right:12%}.visual-label{position:absolute;right:9%;top:15%;font-size:12px;letter-spacing:.12em;color:#fff;transform:rotate(7deg)}.visual-label b{font-size:20px}.speed-line{position:absolute;height:4px;background:var(--red);width:80px;left:9%;transform:rotate(7deg)}.one{top:25%}.two{top:31%;width:45px}.stats{display:flex;justify-content:space-around;background:var(--ink);color:#fff;padding:34px 8%;text-align:center}.stats div{display:flex;gap:10px;align-items:center}.stats strong{font-size:30px;color:var(--red)}.stats span{font-size:12px;color:#aaa}.section{padding:100px 9%}.section-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:45px}.section-heading h2,.cta h2,.contact-details h2{font-size:50px;line-height:.95;letter-spacing:-.06em;margin:0}.section-heading>p{max-width:300px;line-height:1.6;color:var(--muted)}.filters{display:flex;gap:25px;border-bottom:1px solid #d7d6d1;margin-bottom:35px}.filter{border:0;background:transparent;padding:12px 0;color:var(--muted);cursor:pointer}.filter.active{color:var(--blue);border-bottom:2px solid var(--blue);font-weight:bold}.vehicle-grid,.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.vehicle-image{height:220px;position:relative;overflow:hidden}.vehicle-image:after{content:'AUTO';position:absolute;font-weight:bold;font-size:75px;color:#fff2;bottom:5px;left:8px;transform:skew(-15deg)}.vehicle-image.blue{background:linear-gradient(135deg,#b4c4ff,var(--blue))}.vehicle-image.silver{background:linear-gradient(135deg,#eee,#8c929d)}.vehicle-image.red{background:linear-gradient(135deg,#ffb4ad,var(--red))}.vehicle-image span{position:absolute;top:16px;left:18px;color:#fff;font-size:11px}.vehicle-image b{position:absolute;right:25px;top:15px;color:#fff;font-size:30px}.vehicle-info{background:#fff;padding:20px}.vehicle-info p{color:var(--muted);font-size:12px;margin:0 0 8px}.vehicle-info h3{margin:0 0 20px;font-size:23px}.vehicle-info a,.service-grid a{font-size:12px;color:var(--blue);font-weight:bold}.cta{padding:95px 9%;background:var(--blue);color:#fff}.cta h2{font-size:68px;margin-bottom:35px}.cta h2 em{color:#fff}.page-hero{padding:100px 15% 90px;background:var(--ink);color:#fff}.page-hero .lead{color:#bbb}.service-grid{padding:90px 9%;background:#fff}.service-grid article{padding:30px 0;border-top:3px solid var(--blue)}.service-grid article:nth-child(2){border-color:var(--red)}.service-number{color:var(--muted);font-size:12px}.service-grid h2{font-size:28px;margin:55px 0 18px}.service-grid p{color:var(--muted);line-height:1.7;min-height:80px}.contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:12%;padding:95px 12%;background:#fff}.contact-details>p:not(.eyebrow){color:var(--muted);line-height:1.6;max-width:350px;margin:30px 0}.detail{border-top:1px solid #ddd;padding:18px 0;display:flex;justify-content:space-between;font-size:13px}.detail b{color:var(--muted)}.detail a{color:var(--blue)}form{display:flex;flex-direction:column;gap:9px}label{font-size:12px;font-weight:bold;margin-top:9px}input,select,textarea{border:1px solid #ddd;padding:14px;font:inherit;background:var(--cream)}textarea{resize:vertical}form .button{align-self:start;margin-top:12px}.form-message{color:var(--blue);font-size:13px}footer{display:flex;align-items:center;justify-content:space-between;padding:35px 6vw;font-size:12px;color:var(--muted)}footer div{display:flex;gap:20px}footer a:hover{color:var(--blue)}@media(max-width:700px){.site-header{padding:0 5vw;height:auto;min-height:75px;flex-wrap:wrap;gap:15px}nav{order:3;width:100%;justify-content:space-between;padding-bottom:14px}.site-header .button{display:none}.hero{display:block;padding:70px 7vw}.hero-visual{margin:60px 0 0;height:300px}.stats{padding:25px 4%;gap:12px}.stats div{display:block}.stats strong{display:block}.section,.contact-layout{padding:65px 7%}.section-heading{display:block}.section-heading>p{margin-top:25px}.vehicle-grid,.service-grid,.contact-layout{grid-template-columns:1fr}.cta{padding:65px 7%}.cta h2{font-size:52px}.page-hero{padding:75px 7%}footer{display:block;padding:30px 7%}footer p{margin:25px 0}}
+/* T-17 Autos Professional Styling */
+
+/* Brand Colors */
+:root {
+  --primary-color: #FFFFFF;        /* White */
+  --accent-color: #002E7E;         /* Blue */
+  --danger-color: #D32F2F;         /* Red */
+  --bg-color: #1A1A1A;             /* Velvet Black */
+  --text-light: #E0E0E0;           /* Light text */
+  --text-dark: #121212;            /* Dark text */
+  --border-color: #333333;         /* Border color */
+  --spacing-unit: 1rem;
+}
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* Header Navigation */
+.site-header {
+  background-color: rgba(26, 26, 26, 0.95);
+  border-bottom: 2px solid var(--accent-color);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  letter-spacing: 0.05em;
+}
+
+.main-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--accent-color);
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-color), var(--danger-color));
+}
+
+.cta-button {
+  background: linear-gradient(135deg, var(--accent-color), var(--danger-color));
+  color: var(--primary-color);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 46, 126, 0.3);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, rgba(0, 46, 126, 0.15), rgba(211, 47, 47, 0.15));
+  border-bottom: 2px solid var(--accent-color);
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  letter-spacing: 0.02em;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--text-light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Main Container */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Section Styles */
+.showroom {
+  padding: 4rem 0;
+}
+
+.section-container {
+  width: 100%;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Filter Controls */
+.filter-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background-color: transparent;
+  color: var(--text-light);
+  border: 2px solid var(--border-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.filter-btn.active {
+  background: linear-gradient(135deg, var(--accent-color), var(--danger-color));
+  border-color: transparent;
+  color: var(--primary-color);
+}
+
+/* Vehicle Grid */
+.vehicle-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.vehicle-card {
+  background: linear-gradient(135deg, rgba(0, 46, 126, 0.1), rgba(211, 47, 47, 0.05));
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.vehicle-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent-color);
+  box-shadow: 0 12px 32px rgba(0, 46, 126, 0.2);
+}
+
+.vehicle-image {
+  background: linear-gradient(135deg, var(--accent-color), rgba(211, 47, 47, 0.5));
+  color: var(--primary-color);
+  padding: 3rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vehicle-card h3 {
+  font-size: 1.3rem;
+  margin: 1.5rem 1.5rem 0.5rem;
+  color: var(--primary-color);
+}
+
+.vehicle-brand {
+  font-size: 0.9rem;
+  color: var(--accent-color);
+  font-weight: 600;
+  margin: 0.5rem 1.5rem;
+}
+
+.vehicle-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--danger-color);
+  margin: 0.5rem 1.5rem;
+}
+
+.vehicle-desc {
+  color: var(--text-light);
+  margin: 0 1.5rem 1.5rem;
+  flex-grow: 1;
+  font-size: 0.95rem;
+}
+
+.vehicle-btn {
+  background: linear-gradient(90deg, var(--accent-color), var(--danger-color));
+  color: var(--primary-color);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin: 0 1.5rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.vehicle-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(211, 47, 47, 0.3);
+}
+
+.vehicle-card.hidden {
+  display: none;
+}
+
+/* Footer */
+.site-footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-top: 2px solid var(--accent-color);
+  margin-top: 4rem;
+  padding: 2rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-content {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.t17-info h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.t17-info p {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-links a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--accent-color);
+}
+
+/* Webmaster Section (Minimal Footer) */
+.footer-webmaster {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-align: right;
+}
+
+.webmaster-logo {
+  display: flex;
+}
+
+.ippm-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.ippm-logo:hover {
+  opacity: 1;
+}
+
+.webmaster-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.webmaster-text small {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  line-height: 1.2;
+}
+
+.webmaster-text a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.webmaster-text a:hover {
+  color: var(--danger-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-container {
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .main-nav {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .vehicle-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-controls {
+    gap: 0.5rem;
+  }
+
+  .filter-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-webmaster {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-name {
+    font-size: 1.2rem;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .vehicle-image {
+    font-size: 2rem;
+    padding: 2rem;
+  }
+}
